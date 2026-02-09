@@ -18,6 +18,28 @@ A prototype AI agent that:
 - Breaks down a user request into planning and execution phases
 - Uses LangGraph to manage transitions between agent nodes
 - Produces structured, actionable outputs instead of free-form text
+## What This Agent Generates
+
+The agent does not just return free-form text. It generates **structured, decision-oriented outputs** derived through multiple reasoning steps.
+
+Specifically, the agent produces:
+
+- A clear understanding of the user’s intent (event type, theme, constraints)
+- A structured decoration plan broken down into:
+  - Theme and aesthetic direction
+  - Color palette and mood
+  - Decoration elements (lighting, props, layout ideas)
+  - Budget-aware recommendations
+- Step-by-step reasoning across agent nodes, with state passed explicitly between steps
+- A final consolidated response synthesized from intermediate planning outputs
+
+Each step updates the shared agent state, allowing the final output to be:
+- Consistent
+- Traceable
+- Easy to extend with tools or persistence later
+
+This design mirrors how real-world agent systems move from **interpretation → planning → execution**, rather than responding in a single opaque LLM call.
+
 
 ## Tech Stack
 
