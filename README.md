@@ -1,4 +1,4 @@
-# AI Agent Experiments (LangGraph)
+# AI Agent (LangGraph)
 
 This repository contains experiments and prototypes for building AI agents using **LangGraph**.  
 The focus is on agent orchestration, state management, and tool-driven workflows for real-world tasks.
